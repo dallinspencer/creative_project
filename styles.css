@@ -4,7 +4,7 @@
   box-sizing: border-box;
   /*border: 1px solid #000000;*/
   background-color: #FFF0F5;
-  font-family: "DejaVu Sans Mono","cursive";
+  font-family: "sans-serif";
 }
 p{
   font-size: 24px;
@@ -89,6 +89,7 @@ img{
 .menu{
   display: flex;
   justify-content: flex-end;
+  background: #000;
 }
 .dropdown {
   overflow: hidden;
@@ -104,6 +105,7 @@ img{
   background-color: #000;
   font-family: inherit;
   margin: 0;
+  height: 100%;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
@@ -112,7 +114,7 @@ img{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -165,7 +167,7 @@ img{
 }
 .photo-grid {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -174,7 +176,8 @@ img{
   flex-direction: column;
   min-width: 20%;
   max-width: 30%;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .emotion_link{
   display: flex;
@@ -215,10 +218,10 @@ img{
   justify-content: space-around;
   font-size: 20px;
   margin: 24px;
-  font-family: "Apple Chancery","DejaVu Sans Mono","cursive";
+  font-family: "cursive";
 }
 .comparison_main p, .about_main p{
-  font-family: "Apple Chancery","DejaVu Sans Mono","cursive";
+  font-family: "cursive";
 }
 ul{
   padding-left: 28px;
@@ -243,6 +246,7 @@ ul li{
       display: flex;
       flex-wrap: wrap;
       word-wrap: normal;
+      font-size: 18px;
     }
     .main_photos{
       display: flex;
@@ -267,11 +271,40 @@ ul li{
       flex-direction: column;
       overflow: hidden;
     }
-
-  }
-
-  @media only screen and (min-width: 768px) {
-    .main_photos{
-      display: flex;
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 10px;
+      padding-left: 16px;
+      padding-right: 16px;
+      background-color: #000;
+      font-family: inherit;
+      margin: 0;
+      height: 100%;
     }
+    .menu_items{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 16px;
+      background-color: #000;
+      float: right;
+    }
+    .emotion-grid-item{
+      min-width: 25%;
+      max-width: 40%;
+    }
+    .emotion_link{
+      margin: 12px;
+      border: none;
+    }
+    a p{
+      font-size: 16px;
+    }
+
   }
